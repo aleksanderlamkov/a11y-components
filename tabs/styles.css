@@ -1,0 +1,21 @@
+:focus-visible {
+  outline: 2px dashed dodgerblue;
+}
+
+.tabs__buttons {
+  margin-bottom: 5px;
+}
+
+.tabs__button {
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+}
+
+.tabs__button.is-active {
+  background-color: lightskyblue;
+  pointer-events: none;
+}
+
+.tabs__content:not(.is-active) {
+  display: none;
+}
