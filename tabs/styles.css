@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 :focus-visible {
   outline: 2px dashed dodgerblue;
 }
@@ -18,4 +22,21 @@
 
 .tabs__content:not(.is-active) {
   display: none;
+}
+
+@media (prefers-contrast: more) {
+  :focus-visible {
+    outline-offset: 1px;
+  }
+
+  .tabs__button {
+    border-width: 1px;
+  }
+
+  .tabs__button.is-active {
+    position: relative;
+    top: -4px;
+    border-top-width: 4px;
+    border-inline-width: 2px;
+  }
 }
